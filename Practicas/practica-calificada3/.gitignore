@@ -2,3 +2,6 @@
 demo.exe
 demo_optima.exe
 test.exe
+
+# Carpeta de compilación de CMake
+build/
