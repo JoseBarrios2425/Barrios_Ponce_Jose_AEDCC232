@@ -6,6 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include_directories(include)
 
+# Libreria de lectura
+add_library(leer src/leer.cpp)
+
 # Solucion ingenua
 add_library(solucion_ingenua src/solucion_ingenua.cpp)
 
@@ -14,11 +17,11 @@ add_library(solucion_optima src/solucion_optima.cpp)
 
 # Demo ingenua
 add_executable(demo_ingenua demos/demo_ingenua.cpp)
-target_link_libraries(demo_ingenua solucion_ingenua)
+target_link_libraries(demo_ingenua solucion_ingenua leer)
 
 # Demo optima
 add_executable(demo_optima demos/demo_optima.cpp)
-target_link_libraries(demo_optima solucion_optima)
+target_link_libraries(demo_optima solucion_optima leer)
 
 # Tests
 add_executable(unit_tests tests/test.cpp)

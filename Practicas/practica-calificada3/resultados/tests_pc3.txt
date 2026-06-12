@@ -1,0 +1,38 @@
+---- Tests y Benchmark PC3 - Trapping Rain Water II ----
+
+--- Ejecucion de Pruebas ---
+./build/unit_tests.exe
+
+=== Ejecutando pruebas PC3 ===
+PRUEBA 1 PASADA - Caso minimo 3x3: 2
+PRUEBA 2 PASADA - Sin agua acumulable: 0
+PRUEBA 3 PASADA - Todas las celdas con la misma altura: 0
+PRUEBA 4 PASADA - Caso extremo verificable a mano: 23
+PRUEBA 5a PASADA - Mapa simetrico, ambas coinciden: 4
+PRUEBA 5b PASADA - Mapa simetrico, ambas coinciden: 10
+PRUEBA 5c PASADA - Mapa irregular, ingenua falla | Optima: 13 Ingenua: 23
+PRUEBA 6 PASADA - Invariante del heap cumplido: 10
+PRUEBA 7 PASADA - Grilla menor a 3x3: 0
+PRUEBA 8 PASADA - Grilla de una sola fila: 0
+=== Todas las pruebas completadas ===
+
+--- Ejecucion de Benchmark ---
+./build/benchmark.exe
+
+=== Benchmark: Solucion Ingenua vs Optima ===
+--- Mapa pequeno 5x6 ---
+Solucion Ingenua - Resultado: 34 | Tiempo: 0.005 ms
+Solucion Optima  - Resultado: 34 | Tiempo: 0.0319 ms
+--- Mapa grande 10x10 ---
+Solucion Ingenua - Resultado: 180 | Tiempo: 0.031 ms
+Solucion Optima  - Resultado: 180 | Tiempo: 0.0828 ms
+
+--- Observaciones ---
+Las 10 pruebas ejecutadas pasaron.
+La prueba 5c confirma que la solucion ingenua falla en mapas irregulares
+dando 23 cuando el resultado correcto es 13.
+
+Para mapas pequeños la solución ingenua es mas rapida
+que la optima. La ventaja de la solucion optima se evidencia en entradas
+grandes donde su complejidad O(m*n*log(m*n)) supera a O(m*n*(m+n))
+de la ingenua.

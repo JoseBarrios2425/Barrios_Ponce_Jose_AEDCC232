@@ -3,7 +3,6 @@
 ## Sábado 06/06/2026
 1) lectura y analisis del problema.
 
-
 ## Domingo 07/06/2026
 1) Se crearon los siguientes archivos:
 - solucion_ingenua.h
@@ -51,5 +50,26 @@
 - Comparación entre solución óptima e ingenua en las matrices predeterminadas. 
 - Verificar el invariante del heap en una matriz 5x5 con pozo central.
 
-
 ## Jueves 11/06/2026
+1) Se crearon los siguientes archivos.
+- CMakeLists.txt
+- benchmark.cpp
+- test.cpp
+- leer.h
+- leer.cpp
+
+2) Se crearon los archivos include/leer.h y leer.cpp que implementan una función para leer matrices desde la entrada estándar (primero filas y columnas, luego la matriz fila por fila). Se actualizaron demo_ingenua.cpp y demo_optima.cpp para utilizar esta función, permitiendo ahora ingresar matrices manualmente en lugar de usar solo las predeterminadas.
+
+3) Se creó el archivo CMakeLists.txt para estructurar la compilación del proyecto. Se creó benchmark.cpp que compara la velocidad de ejecución entre la solución ingenua y la solución óptima en matrices de diferentes tamaños.
+
+## Viernes 12/06/2026
+1) Se crearon los archivos.
+- bitacora.md
+- respuestas_obligatorias.md
+- casos_bordes.txt
+- ejecucion_pc3.txt
+- tests_pc3.txt
+
+2) Se agregaron 2 pruebas más.
+
+3) Se agrego el video explicativo de la pc3

@@ -113,6 +113,27 @@ void prueba6() {
     cout << "PRUEBA 6 PASADA - Invariante del heap cumplido: " << resultado << endl;
 }
 
+void prueba7() {
+    
+    vector<vector<int>> heightMap = {
+        {3, 3},
+        {3, 3}
+    };
+    int resultado = calcularAguaAtrapada(heightMap);
+    assert(resultado == 0);
+    cout << "PRUEBA 7 PASADA - Grilla menor a 3x3: " << resultado << endl;
+}
+
+void prueba8() {
+    // Grilla con una sola fila, sin interior posible
+    vector<vector<int>> heightMap = {
+        {3, 3, 3, 3, 3}
+    };
+    int resultado = calcularAguaAtrapada(heightMap);
+    assert(resultado == 0);
+    cout << "PRUEBA 8 PASADA - Grilla de una sola fila: " << resultado << endl;
+}
+
 int main() {
     cout << "=== Ejecutando pruebas PC3 ===" << endl << endl;
     prueba1();
@@ -121,6 +142,8 @@ int main() {
     prueba4();
     prueba5();
     prueba6();
+    prueba7();
+    prueba8();
     cout << endl << "=== Todas las pruebas completadas ===" << endl;
     return 0;
 }

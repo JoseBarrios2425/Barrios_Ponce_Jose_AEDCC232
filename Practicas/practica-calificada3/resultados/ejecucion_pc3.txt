@@ -1,0 +1,36 @@
+---- Ejecucion PC3 - Trapping Rain Water II ----
+
+--- Compilacion ---
+cmake -S . -B build
+cmake --build build
+
+Ejecutables generados:
+  build/demo_optima.exe
+  build/demo_ingenua.exe
+  build/unit_tests.exe
+  build/benchmark.exe
+
+--- Demo Solucion Optima ---
+./build/demo_optima.exe
+
+Input: [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]
+Output: 4
+
+Input: [[3,3,3,3,3],[3,2,2,2,3],[3,2,1,2,3],[3,2,2,2,3],[3,3,3,3,3]]
+Output: 10
+
+Input: [[3,5,4,5,3,4],[5,1,2,3,1,5],[4,2,1,2,3,3],[5,3,2,1,2,5],[3,5,4,5,3,4]]
+Output: 13
+
+--- Demo Solucion Ingenua ---
+./build/demo_ingenua.exe
+
+Input: [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]
+Output: 4
+
+Input: [[3,3,3,3,3],[3,2,2,2,3],[3,2,1,2,3],[3,2,2,2,3],[3,3,3,3,3]]
+Output: 10
+
+Input: [[3,5,4,5,3,4],[5,1,2,3,1,5],[4,2,1,2,3,3],[5,3,2,1,2,5],[3,5,4,5,3,4]]
+Output: 23
+
